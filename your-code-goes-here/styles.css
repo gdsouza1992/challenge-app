@@ -1,14 +1,67 @@
 body {
-  padding: 1em 4em;
+  padding: 0px;
 }
 
 h1 {
   font-family: Helvetica;
   color: white;
-  background-color: #0099ff;
-  padding: 0.5em;
+  border-bottom: 2px solid #56b5e1;
+  padding: 10px 60px;
 }
 
 pre {
   font-size: 1.5em;
+}
+
+form {
+    font-size: large;
+}
+
+#root{
+    padding: 60px;
+}
+
+.recharts-wrapper .recharts-cartesian-grid-vertical{
+    stroke-opacity: 0;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+#itemNameInput:focus + #itemNameLabel{
+    color: #F00;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    background-color: #55B6E1;
+    border-color: #55B6E1;
+}
+
+.chartTooltip{
+    padding: 5px 10px;
+    background-color: #253338;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+tr th:nth-child(2), tr td:nth-child(2) {
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    tr th:nth-child(2), tr td:nth-child(2) {
+        width: 25%;
+    }
+}
+
+
+.yAxis>.recharts-cartesian-axis-ticks{
+    font-size: 16px;
+    font-weight: 600;
 }
