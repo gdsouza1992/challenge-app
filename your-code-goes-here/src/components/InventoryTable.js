@@ -75,7 +75,7 @@ class InventoryTable extends Component {
                     </div>
                 </div>
 
-                <BootstrapTable data={this.props.inventory} hover height='auto'>
+                <BootstrapTable data={this.props.inventory} hover height='auto' pagination>
                     <TableHeaderColumn isKey dataField='id' hidden>Product ID</TableHeaderColumn>
                     <TableHeaderColumn dataField='name' dataSort>Product Name</TableHeaderColumn>
                     <TableHeaderColumn dataField='itemStock' dataSort={true} sortFunc={this.revertSortFunc} dataFormat={ this.quantityFormatter }>Quantity</TableHeaderColumn>
